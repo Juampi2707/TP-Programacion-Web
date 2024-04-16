@@ -10,56 +10,67 @@
 	
 	
 	</head>
-<body>
-	<header>
+<body style="background-color: #333">
+	<header style="padding-right: 0%;">
 		<h1 class="basics">Mapa interactivo del Cosmere</h1>
 	</header>
-	<div class="wrapper">
-        <aside id="sidebar">
-            <div class="d-flex">
-                <button class="toggle-btn" type="button">
-                    <i class="lni lni-arrow-right-circle"></i>
-                </button>
-            </div>
-            <ul class="sidebar-nav">
-                <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-                        data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
-                        <i class="lni lni-world"></i>
-                        <span>Planetas</span>
-                    </a>
-                    <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                        <li class="sidebar-item">
-                            <a href="./sel.html" class="sidebar-link">Sel</a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="./scadrial.html" class="sidebar-link">Scadrial</a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="./roshar.html" class="sidebar-link">Roshar</a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="./taldain.html" class="sidebar-link">Taldain</a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="./roshar.html" class="sidebar-link">Treno</a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="./fots.html" class="sidebar-link">Primero del Sol</a>
-                        </li>
-                    </ul>
-            </ul>
-        </aside>
-    </div>
-	<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3000 1800">
-		<image width="3000" height="1800" xlink:href="./imgs/cosmere.jpg"></image> <a xlink:href="./sel.html">
-		  <rect x="97" y="92" fill="#fff" opacity="0" width="702" height="254"></rect>
-		</a>
-	  </svg>
+	<div class="row" style="padding-right: 0%; margin: 0%;">
+		<div class="col-*-*" style="padding: 0%; width: 13%; height: 97vh";>
+			<div class="wrapper">
+				<aside id="sidebar">
+					<div class="d-flex">
+						<button class="toggle-btn" type="button">
+							<i class="lni lni-arrow-right-circle"></i>
+						</button>
+					</div>
+					<ul class="sidebar-nav">
+						<li class="sidebar-item">
+							<a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
+								data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
+								<i class="lni lni-world"></i>
+								<span>Planetas</span>
+							</a>
+							<ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
+								<li class="sidebar-item">
+									<a href="./sel.html" class="sidebar-link">Sel</a>
+								</li>
+								<li class="sidebar-item">
+									<a href="./scadrial.html" class="sidebar-link">Scadrial</a>
+								</li>
+								<li class="sidebar-item">
+									<a href="./roshar.html" class="sidebar-link">Roshar</a>
+								</li>
+								<li class="sidebar-item">
+									<a href="./taldain.html" class="sidebar-link">Taldain</a>
+								</li>
+								<li class="sidebar-item">
+									<a href="./roshar.html" class="sidebar-link">Treno</a>
+								</li>
+								<li class="sidebar-item">
+									<a href="./fots.html" class="sidebar-link">Primero del Sol</a>
+								</li>
+							</ul>
+					</ul>
+				</aside>
+			</div>
 
-	<map name="image-map">
-		<area target="" alt="sel" title="sel" href="./sel.html" coords="64,346,848,63" shape="rect">
-	</map>
+		</div>
+		<div class="col-*-*" style="padding-left: 0%; padding-right: 0%; width: 87%; height: 97vh">
+			
+			<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 3000 1800">
+				<image id="fondoMain" width="100%" height="1800" xlink:href="./imgs/cosmere.jpg"></image> <a xlink:href="./sel.html">
+				  <rect x="97" y="92" fill="#fff" opacity="0" width="702" height="254"></rect>
+				</a>
+			  </svg>
+		
+			<map name="image-map">
+				<area target="" alt="sel" title="sel" href="./sel.html" coords="64,346,848,63" shape="rect">
+			</map>
+		</div>
+	</div>
+	
+
+	
 	<script src="./main.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 

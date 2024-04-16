@@ -21,57 +21,6 @@ header{
     }
 }
 
-#fondoMain{
-	width:100%;
-	height:100vh;
-	color:white;
-	background-color:blue;
-	background-image: url("./imgs/cosmere.jpg");
-	background-size: 100% 100%;
-}
-
-#scadrial{
-	width:25.4666%;
-	height:31.3333%;
-	background-image: url("./imgs/scadrial.png");
-	background-size: 100% 100%;
-}
-#roshar{
-	width:31.5666%;
-	height:38.3888%;
-	background-image: url("./imgs/roshar.png");
-	background-size: 100% 100%;
-}
-#nalthis{
-	width:9.7666%;
-	height:17.6111%;
-	background-image: url("./imgs/nalthis.png");
-	background-size: 100% 100%;
-}
-#sel{
-	width:22.8666%;
-	height:12.0555%;
-	background-image: url("./imgs/sel.png");
-	background-size: 100% 100%;
-}
-#fots{
-	width:21.2%;
-	height:16.8333%;
-	background-image: url("./imgs/fots.png");
-	background-size: 100% 100%;
-}
-#taldain{
-	width:17.9666%;
-	height:33.2222%;
-	background-image: url("./imgs/taldain.png");
-	background-size: 100% 100%;
-}
-#threnody{
-	width:10.7%;
-	height:30.4444%;
-	background-image: url("./imgs/threnody.png");
-	background-size: 100% 100%;
-}
 #titulo{
 	margin-left: auto;
 	margin-right: auto;
@@ -102,6 +51,10 @@ img {max-width: 100%; height: auto;}
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+#fondoMain{
+	flex: right;
 }
 
 a {
@@ -144,8 +97,8 @@ body {
 }
 
 #sidebar.expand {
-    width: 260px;
-    min-width: 260px;
+    width: 100%;
+    min-width: 100%;
 }
 
 .toggle-btn {
@@ -177,7 +130,7 @@ body {
 
 .sidebar-nav {
     padding: 2rem 0;
-    flex: 1 1 auto;
+    flex: left;
 }
 
 a.sidebar-link {
@@ -237,3 +190,57 @@ a.sidebar-link:hover {
     transform: rotate(45deg);
     transition: all .2s ease-out;
 }
+
+
+/*
+#fondoMain{
+	width:100%;
+	height:100vh;
+	color:white;
+	background-color:blue;
+	background-image: url("./imgs/cosmere.jpg");
+	background-size: 100% 100%;
+}
+
+#scadrial{
+	width:25.4666%;
+	height:31.3333%;
+	background-image: url("./imgs/scadrial.png");
+	background-size: 100% 100%;
+}
+#roshar{
+	width:31.5666%;
+	height:38.3888%;
+	background-image: url("./imgs/roshar.png");
+	background-size: 100% 100%;
+}
+#nalthis{
+	width:9.7666%;
+	height:17.6111%;
+	background-image: url("./imgs/nalthis.png");
+	background-size: 100% 100%;
+}
+#sel{
+	width:22.8666%;
+	height:12.0555%;
+	background-image: url("./imgs/sel.png");
+	background-size: 100% 100%;
+}
+#fots{
+	width:21.2%;
+	height:16.8333%;
+	background-image: url("./imgs/fots.png");
+	background-size: 100% 100%;
+}
+#taldain{
+	width:17.9666%;
+	height:33.2222%;
+	background-image: url("./imgs/taldain.png");
+	background-size: 100% 100%;
+}
+#threnody{
+	width:10.7%;
+	height:30.4444%;
+	background-image: url("./imgs/threnody.png");
+	background-size: 100% 100%;
+}*/
