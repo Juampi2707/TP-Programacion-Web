@@ -10,9 +10,10 @@ header{
     background-color: black;
 	/*border: solid 1px red;*/
 }
-.basics{
+.basicsh1{
 	color: white;
-	font-family: arial, helvetica, sans serif;
+	font-family: papyrus, helvetica, sans serif;
+    font-size: 3vw;
 }
 
 @media screen and (max-width: 768px) {
@@ -94,11 +95,12 @@ body {
     background-color: #0e2238;
     display: flex;
     flex-direction: column;
+    height: 100%;
 }
 
 #sidebar.expand {
-    width: 100%;
-    min-width: 100%;
+    width: 13vw;
+    min-width: 200px;
 }
 
 .toggle-btn {
@@ -191,6 +193,45 @@ a.sidebar-link:hover {
     transition: all .2s ease-out;
 }
 
+#container { display:block; }
+
+@media only screen and (orientation:portrait){
+
+  #container {
+
+    height: 100vw;
+
+    -webkit-transform: rotate(90deg);
+
+    -moz-transform: rotate(90deg);
+
+    -o-transform: rotate(90deg);
+
+    -ms-transform: rotate(90deg);
+
+    transform: rotate(90deg);
+
+  }
+
+}
+
+@media only screen and (orientation:landscape){
+
+  #container {
+
+     -webkit-transform: rotate(0deg);
+
+     -moz-transform: rotate(0deg);
+
+     -o-transform: rotate(0deg);
+
+     -ms-transform: rotate(0deg);
+
+     transform: rotate(0deg);
+
+  }
+
+}
 
 /*
 #fondoMain{
