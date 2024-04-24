@@ -1,287 +1,50 @@
 body{
-	margin: 0px;
+    background-color: blue;
+    background-image: url("./imgs/lmao.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
-header{
+
+.basicsImagenes{
+    background-repeat: no-repeat;
+    height: auto;
     width: 100%;
-    margin-top: auto;
+}
+
+.basicsDivs{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: black;
-	/*border: solid 1px red;*/
-}
-.basicsh1{
-	color: white;
-	font-family: papyrus, helvetica, sans serif;
-    font-size: 3vw;
-}
-
-@media screen and (max-width: 768px) {
-    h1{
-        font-size:14px;
-    }
-}
-
-#titulo{
-	margin-left: auto;
-	margin-right: auto;
-	background-color: black;
-	margin-top: 0px;
-	position: sticky;
-}
-
-.selectable{
-	border: 1px solid transparent;
-}
-.selectable:hover{
-	border-color: white;
-	border-width: 20px;
-}
-
-img {max-width: 100%; height: auto;}
-
-.imagemap {position: relative;}
-.imagemap img {display: block;}
-.imagemap .area {display: block; position: absolute; transition: box-shadow 0.15s ease-in-out;}
-.imagemap .area:hover {box-shadow: 0px 0px 1vw rgba(0,0,0,0.5);}
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
-::after,
-::before {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-#fondoMain{
-	flex: right;
-}
-
-a {
-    text-decoration: none;
-}
-
-li {
-    list-style: none;
-}
-
-h1 {
-    font-weight: 600;
-    font-size: 1.5rem;
-}
-
-body {
-    font-family: 'Poppins', sans-serif;
-}
-
-.wrapper {
-    display: flex;
-}
-
-.main {
-    min-height: 100vh;
-    width: 100%;
+    width: fit-content;
     overflow: hidden;
-    transition: all 0.35s ease-in-out;
-    background-color: #fafbfe;
+}
+.divDeImagenes{
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+    border: solid 1px red;
+}
+.zoom{
+    transition: all .3s ease-in-out;
+}
+.zoom:hover{
+    transform: scale(1.1);
+}
+.parrafo{
+    margin-left: 1%;
 }
 
-#sidebar {
-    width: 70px;
-    min-width: 70px;
-    z-index: 1000;
-    transition: all .25s ease-in-out;
-    background-color: #0e2238;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
+#main{
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: white;
+    overflow-y: scroll;
+    height: 50%;
 }
 
-#sidebar.expand {
-    width: 13vw;
-    min-width: 200px;
-}
-
-.toggle-btn {
-    background-color: transparent;
-    cursor: pointer;
-    border: 0;
-    padding: 1rem 1.5rem;
-}
-
-.toggle-btn i {
-    font-size: 1.5rem;
-    color: #FFF;
-}
-
-.sidebar-logo {
-    margin: auto 0;
-}
-
-.sidebar-logo a {
-    color: #FFF;
-    font-size: 1.15rem;
-    font-weight: 600;
-}
-
-#sidebar:not(.expand) .sidebar-logo,
-#sidebar:not(.expand) a.sidebar-link span {
-    display: none;
-}
-
-.sidebar-nav {
-    padding: 2rem 0;
-    flex: left;
-}
-
-a.sidebar-link {
-    padding: .625rem 1.625rem;
-    color: #FFF;
-    display: block;
-    font-size: 0.9rem;
-    white-space: nowrap;
-    border-left: 3px solid transparent;
-}
-
-.sidebar-link i {
-    font-size: 1.1rem;
-    margin-right: .75rem;
-}
-
-a.sidebar-link:hover {
-    background-color: rgba(255, 255, 255, .075);
-    border-left: 3px solid #3b7ddd;
-}
-
-.sidebar-item {
-    position: relative;
-}
-
-#sidebar:not(.expand) .sidebar-item .sidebar-dropdown {
-    position: absolute;
-    top: 0;
-    left: 70px;
-    background-color: #0e2238;
-    padding: 0;
-    min-width: 15rem;
-    display: none;
-}
-
-#sidebar:not(.expand) .sidebar-item:hover .has-dropdown+.sidebar-dropdown {
-    display: block;
-    max-height: 15em;
-    width: 100%;
-    opacity: 1;
-}
-
-#sidebar.expand .sidebar-link[data-bs-toggle="collapse"]::after {
-    border: solid;
-    border-width: 0 .075rem .075rem 0;
-    content: "";
-    display: inline-block;
-    padding: 2px;
-    position: absolute;
-    right: 1.5rem;
-    top: 1.4rem;
-    transform: rotate(-135deg);
-    transition: all .2s ease-out;
-}
-
-#sidebar.expand .sidebar-link[data-bs-toggle="collapse"].collapsed::after {
-    transform: rotate(45deg);
-    transition: all .2s ease-out;
-}
-
-#container { display:block; }
-
-@media only screen and (orientation:portrait){
-
-  #container {
-
-    height: 100vw;
-
-    -webkit-transform: rotate(90deg);
-
-    -moz-transform: rotate(90deg);
-
-    -o-transform: rotate(90deg);
-
-    -ms-transform: rotate(90deg);
-
-    transform: rotate(90deg);
-
-  }
-
-}
-
-@media only screen and (orientation:landscape){
-
-  #container {
-
-     -webkit-transform: rotate(0deg);
-
-     -moz-transform: rotate(0deg);
-
-     -o-transform: rotate(0deg);
-
-     -ms-transform: rotate(0deg);
-
-     transform: rotate(0deg);
-
-  }
-
-}
-
-/*
-#fondoMain{
-	width:100%;
-	height:100vh;
-	color:white;
-	background-color:blue;
-	background-image: url("./imgs/cosmere.jpg");
-	background-size: 100% 100%;
-}
-
-#scadrial{
-	width:25.4666%;
-	height:31.3333%;
-	background-image: url("./imgs/scadrial.png");
-	background-size: 100% 100%;
-}
 #roshar{
-	width:31.5666%;
-	height:38.3888%;
-	background-image: url("./imgs/roshar.png");
-	background-size: 100% 100%;
+    background-image: url("./imgs/roshar.jpg");
 }
-#nalthis{
-	width:9.7666%;
-	height:17.6111%;
-	background-image: url("./imgs/nalthis.png");
-	background-size: 100% 100%;
+
+h1{
+    font-family: papyrus;
+    font-size: 4em;
 }
-#sel{
-	width:22.8666%;
-	height:12.0555%;
-	background-image: url("./imgs/sel.png");
-	background-size: 100% 100%;
-}
-#fots{
-	width:21.2%;
-	height:16.8333%;
-	background-image: url("./imgs/fots.png");
-	background-size: 100% 100%;
-}
-#taldain{
-	width:17.9666%;
-	height:33.2222%;
-	background-image: url("./imgs/taldain.png");
-	background-size: 100% 100%;
-}
-#threnody{
-	width:10.7%;
-	height:30.4444%;
-	background-image: url("./imgs/threnody.png");
-	background-size: 100% 100%;
-}*/
