@@ -1,8 +1,0 @@
-Cosmere		W:3000px;H:1800px
-Sel		W:686px;H:217px
-Threnody	W:321px;H:548px
-Taldain		W:539px;H:598px
-Roshar		W:947px;H:691px
-Nalthis		W:293px;H:317px
-Scadrial	W:764px;H:564px
-FotS		W:636px;H:303px
