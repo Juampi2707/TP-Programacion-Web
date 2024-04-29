@@ -1,0 +1,24 @@
+.zoom {
+  transition: all 0.3s ease-in-out;
+}
+
+.zoom:hover {
+  transform: scale(1.05);
+}
+
+body {
+  background-image: url("../../assets/img/lmao.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+p {
+  color: white;
+}
+h1{
+  color: white;
+}
+
