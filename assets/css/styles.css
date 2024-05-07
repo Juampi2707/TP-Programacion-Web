@@ -15,3 +15,21 @@ body {
   background-size: cover;
 }
 
+p {
+  color: white;
+}
+
+h1 {
+  color: white;
+}
+
+#one{
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+}
+#two{
+  width: 100px;
+  height: 100px;
+  border: 1px solid blue;
+}
