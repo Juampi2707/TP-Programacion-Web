@@ -1,25 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-bs-theme="light" lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Quiz</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Features-Image-icons.css">
+    <link rel="stylesheet" href="assets/css/Features-Image-images.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/styles-1.css">
 </head>
+
 <body>
+    <nav class="navbar navbar-expand-md bg-dark py-3" data-bs-theme="dark" style="height:60px;">
+        <div class="container"><button data-bs-toggle="collapse" data-bs-target="#navcol-6" class="navbar-toggler"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse flex-grow-0 order-md-first" id="navcol-6">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item"><a class="nav-link active" href="./index.html"><img height="80" src="assets/img/logoCosmere.png" style="width:40px;height:40px;margin-right:10px;" width="100">Cosmere</a></li>
+                    <li class="nav-item"></li>
+                </ul>
+            </div>
+            <div class="d-none d-md-block"></div>
+        </div>
+    </nav>
     <div class="app">
         <h1>Quiz del Cosmere</h1>
         <div class="quiz">
             <h2 id="pregunta">aca va la pregunta lol</h2>
-            <div id="botones-respuesta">
-                <button class="btn">Respuesta 1</button>
-                <button class="btn">Respuesta 2</button>
-                <button class="btn">Respuesta 3</button>
-                <button class="btn">Respuesta 4</button>
-            </div>
-            <button id="boton-siguiente">Siguiente</button>
+            <div id="botones-respuesta"><button class="btn">Respuesta 1</button><button class="btn">Respuesta 2</button><button class="btn">Respuesta 3</button><button class="btn">Respuesta 4</button></div><button id="boton-siguiente">Siguiente</button>
         </div>
     </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/main.js"></script>
 </body>
-</html>23 32
+
+</html>
