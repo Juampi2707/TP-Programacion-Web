@@ -62,7 +62,7 @@ function mostrarPregunta(){
   preguntaActual.restpuestas.forEach(respuesta => {
     const boton = document.createElement("button")
     boton.innerHTML = respuesta.text
-    boton.classList.add("btn")
+    boton.classList.add("boton")
     botonRespuesta.appendChild(boton)
     if(respuesta.correcto){
       boton.dataset.correcto = respuesta.correcto
