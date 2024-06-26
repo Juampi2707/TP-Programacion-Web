@@ -1,7 +1,7 @@
 const preguntas = [
   {
     pregunta: "¿En que planeta suceden los hechos de Nacidos de la bruma?",
-    restpuestas: [
+    respuestas: [
       {text: "Sel", correcto: false},
       {text: "Roshar", correcto: false},
       {text: "Nalthis", correcto: false},
@@ -10,7 +10,7 @@ const preguntas = [
   },
   {
     pregunta: "¿En cuantos Shards/Fragmentos/Esquirlas se dividió Adonalsium?",
-    restpuestas: [
+    respuestas: [
       {text: "13", correcto: false},
       {text: "10", correcto: false},
       {text: "16", correcto: true},
@@ -19,7 +19,7 @@ const preguntas = [
   },
   {
     pregunta: "Hablando de shards: ¿Cuál de estos NO lo es?",
-    restpuestas: [
+    respuestas: [
       {text: "Fortuna", correcto: true},
       {text: "Ruina", correcto: false},
       {text: "Autonomia", correcto: false},
@@ -28,7 +28,7 @@ const preguntas = [
   },
   {
     pregunta: "¿Cuántos reinos o realidades hay según la realmática?",
-    restpuestas: [
+    respuestas: [
       {text: "1", correcto: false},
       {text: "2", correcto: false},
       {text: "3", correcto: true},
@@ -59,7 +59,7 @@ function mostrarPregunta(){
   preguntaElemento.innerHTML = numeroPregunta + ". " + preguntaActual.pregunta
 
   //Cambio el contenido del boton de cada respuesta por pregunta
-  preguntaActual.restpuestas.forEach(respuesta => {
+  preguntaActual.respuestas.forEach(respuesta => {
     const boton = document.createElement("button")
     boton.innerHTML = respuesta.text
     boton.classList.add("boton")
